@@ -1,25 +1,3 @@
-# setup
-```zsh
-
-npm i -g @nestjs/cli
-nest --version
-nest new {project}
-npm i mongoose @nestjs/mongoose
-
-# startup server
-nest start
-
-# page
-http://localhost:3000/
-
-
-# add controller
-nest g controller users
-
-```
-
-
-
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -56,7 +34,7 @@ $ npm install
 
 ## Running the app
 
-```bash
+```zsh
 # development
 $ npm run start
 
@@ -69,7 +47,7 @@ $ npm run start:prod
 
 ## Test
 
-```bash
+```zsh
 # unit tests
 $ npm run test
 
@@ -80,3 +58,30 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+# setup
+```zsh
+
+npm i -g @nestjs/cli
+nest --version
+nest new {project}
+npm i mongoose @nestjs/mongoose
+
+# startup server
+nest start
+
+# page
+http://localhost:3000/
+
+
+# add controller
+nest g controller users
+
+# add service
+nest g service users
+
+# add module
+nest g module  users
+
+touch src/users/user.model.ts
+
+```
