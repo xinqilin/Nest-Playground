@@ -59,6 +59,7 @@ $ npm run test:cov
 ```
 
 # setup
+
 ```zsh
 
 npm i -g @nestjs/cli
@@ -83,5 +84,9 @@ nest g service users
 nest g module  users
 
 touch src/users/user.model.ts
+
+
+# setup Dockerfile / docker-compose / .dockerignore
+docker compose build
 
 ```
